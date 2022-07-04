@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Getting elemnt by using id..</title>
+</head>
+
+<body>
+    <h1 id="first1">This is heading..</h1>
+    <p id="first">This is my first p just find first id in it..</p>
+
+    <h2 id="sec"></h2>
+    <p id="sec2"></p>
+
+    <!-- now what i want you to do is ...-->
+    <script>
+        const elem = document.getElementById("first1");
+        document.getElementById("sec").innerHTML =
+            "This is me :" + elem.innerHTML;
+
+        const elem2 = document.getElementById("first");
+        document.getElementById("sec2").innerHTML =
+            "this is my para2: " + elem2.innerHTML;
+        document.getElementById("sec2").innerHTML = sec2.innerHTML;
+    </script>
+</body>
+
+</html>
