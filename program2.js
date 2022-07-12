@@ -1,15 +1,10 @@
-function device() {
-    var Device;
-    var dev = document.forms["frm1"].devices.value;
-    if (dev == "ipod") {
-        Device = "small and used to listen to songs.";
-    }
-    if (dev == "ipad") {
-        Device = "used by some community called rich..";
-    }
-    if (dev == "iphone") {
-        Device = "mobile phone used by me..";
-    }
-    document.getElementById("deve").innerHTML =
-        "The speciality of device is: " + Device;
+function Capt() {
+    var Country = document.forms["frm1"].country.value;
+    var capt;
+    if (Country == "India") capt = "Delhi";
+    if (Country == "Sri Lanka") capt = "Colombia";
+    if (Country == "Bangladesh") capt = "Kabul";
+
+    document.getElementById("p1").innerHTML =
+        "Capital of Selected country is:" + capt;
 }
